@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Long+Cang&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>誕生日おめでとう</title>
+</head>
+<body>
+    <div id='lama' class="container-fluid">
+      <div class="rideau col-md-12">        
+        <div class="offset-md-2 col-md-10 display-4 text-center clique">      
+          <div class="col-md-2 sai"><img class='sai' src="img/saitama01.gif" alt=""></div>
+          <div class="col-md-2 sai"><img class='sai' src="img/saitama01.gif" alt=""></div>
+           <span class="cliq ">Clique!!</span>
+           <div class="col-md-2 sai"><img class='sai' src="img/saitama01.gif" alt=""></div>
+           <div class="col-md-2 sai"><img class='sai' src="img/saitama01.gif" alt=""></div>
+        </div>       
+      </div>
+
+      <fieldset id="fiel1">
+        <p >  "Euh... Bonjour... Qui es-tu? Bon...maintenant que je suis là...  Il me semble qu'il faut cliquer sur moi...
+          </p>
+      </fieldset>
+      <fieldset id='field2'>
+        <p id="fiel"> </p>
+      </fieldset>
+
+
+      <div class="cold-md-12 middle">
+        <div class="row haut">
+            <div class="offset-md-2 col-md-6 kiki"><img class='kiki'src="img/kiki.gif" alt=""></div>
+
+            <div class="col-md-1 totoro"><img class="totoro" src="img/sleep.gif" alt=""></div>
+            <div class="col-md-1 totoro"><img class="totoro" src="img/sleep.gif" alt=""></div>
+            <div class="col-md-1 totoro"><img class="totoro" src="img/sleep.gif" alt=""></div>
+            <div class="col-md-1 totoro"><img class="totoro" src="img/sleep.gif" alt=""></div>
+            <div class="col-md-1 totoro"><img class="totoro" src="img/sleep.gif" alt=""></div>
+            <div class="col-md-1 totoro"><img class="totoro" src="img/sleep.gif" alt=""></div>
+            <div class="col-md-1 totoro"><img class="totoro" src="img/sleep.gif" alt=""></div>
+            <div class="col-md-1 totoro"><img class="totoro" src="img/sleep.gif" alt=""></div>
+            <div class="col-md-1 totoro"><img class="totoro" src="img/sleep.gif" alt=""></div>
+            <div class="col-md-1 totoro"><img class="totoro" src="img/sleep.gif" alt=""></div>
+            <div class="col-md-1 totoro"><img class="totoro" src="img/sleep.gif" alt=""></div>
+            <div class="col-md-1 totoro"><img class="totoro" src="img/sleep.gif" alt=""></div>
+
+        </div>
+          <div class="row milieu">
+              <div class="col-md-2 totor"><img class="totor" src="img/chant.gif" alt=""></div>
+              <div class="col-md-4 bus"><img src="img/chatbus.gif" alt=""></div>
+              <div class="col-md-2 totor"><img class="totor2"src="img/chant.gif" alt=""></div>
+              <div class="col-md-2 juu"><img class="juuzo"src="img/juuzo.gif" alt=""></div>
+            <div class="col-md-1 totoro2"><img class="totoro2" src="img/sleep.gif" alt=""></div>
+          
+              
+          </div>
+          <div class="row bas">
+          <div class="col-md-2 "><img class='toto' src="img/sac.gif" alt=""></div>
+
+        </div>
+    </div>
+
+    <div class="row finish">
+      <div><p> J'ai hésité à mettre cette animation dans mon portfolio. Elle regorge de défauts que je n'ai pas
+        eu le temps de corriger. J'ai tout de même choisi de l'intégrer pour montrer le chemin parcouru. Et puis j'y suis attaché, c'est 
+        mon premier projet après tout. Clémence de rigueur donc. Depuis j'ai progressé.  </p>
+
+      <div class='sorry'>
+        <img  src="img/sorry.gif" alt="">
+      </div>
+
+      </div>
+    </div>
+
+
+   
+  
+<script>
+//ACT 2 ANIMATIONS
+
+$('.rideau').click(function(){
+  $('.rideau').fadeOut(2000);
+
+
+
+
+
+
+  //anim persos
+  $('.totoro').delay(80).animate({top:'95vh',width:'80%'}, 8000);
+
+
+
+  $('.bus').delay(4500).animate({left: '93vh'},8000);
+  $('.bus').delay(1500).animate({left: '160vh', opacity:'0'}, 2000);
+
+  $('.totoro2').delay(12000).animate({opacity: '1'}, 7000);
+  $('#fiel1').delay(14000).animate({opacity: '1'}, 7000);
+  
+
+
+
+
+
+  // discours juuzo
+  var k = 0;
+  var speed2 = 200;
+  var txt2= "Ahah!!                   Bon anniversaire de la part de ton parrain préféré!!!               Tout simplement ^^";
+
+
+  function typeWriter2() {
+    if (k < txt2.length) {
+      document.getElementById("fiel").innerHTML += txt2.charAt(k);
+      k++;
+      setTimeout(typeWriter2, speed2);
+    }
+  }
+
+
+
+
+  //totoro clic
+    $('.totoro2').click(function(){
+    $('.juu').delay(500).animate({opacity:'1'});
+    $('.juu').delay(500).animate({left:'20vh'},'slow');
+    $('#field2').delay(2000).fadeIn(1000);
+    typeWriter2();
+    $('#fiel1').animate({opacity: '0'}, 7000);
+   
+
+    $('.toto').delay(10000).animate({marginLeft: '210vh', opacity:'1'},7000);
+    $('.totor').delay(14000).animate({opacity:'1'},2000);
+    $('.totor2').delay(15300).animate({opacity:'1'},3000);
+
+    $('.kiki').delay(18000).animate({opacity: '1'});
+    $('.middle,#field2').delay(21800).fadeOut(1100);
+    $('#field2').animate({opacity:'0'},3000);
+    $('.finish').delay(27000).show('3000');
+    
+
+  });
+
+  });
+
+  
+
+
+</script>
+
+
+</body>
+</html>
